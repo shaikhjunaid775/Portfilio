@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
 
+    <!-- Fancybox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <!--
     - favicon
   -->
@@ -131,13 +139,19 @@
             </li>
 
             <li class="social-item">
-              <a href="https://www.linkedin.com/in/shaikh-junaid-a5358016a" class="social-link">
+              <a
+                href="https://www.linkedin.com/in/shaikh-junaid-a5358016a"
+                class="social-link"
+              >
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
 
             <li class="social-item">
-              <a href="https://www.instagram.com/rextershaikh/" class="social-link">
+              <a
+                href="https://www.instagram.com/rextershaikh/"
+                class="social-link"
+              >
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
@@ -673,7 +687,7 @@
 
               <li class="skills-item">
                 <div class="title-wrapper">
-                  <h5 class="h5">Boostrap </h5>
+                  <h5 class="h5">Boostrap</h5>
                   <data value="90">90%</data>
                 </div>
 
@@ -717,12 +731,12 @@
 
           <section class="projects">
             <ul class="filter-list">
-              <li class="filter-item">
+              <!-- <li class="filter-item">
                 <button class="active" data-filter-btn>All</button>
-              </li>
+              </li> -->
 
               <li class="filter-item">
-                <button class="text-capital" data-filter-btn>pwa</button>
+                <button class="text-capital active" data-filter-btn>PWA</button>
               </li>
 
               <li class="filter-item">
@@ -730,7 +744,7 @@
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>Web development</button>
+                <button data-filter-btn>web development</button>
               </li>
             </ul>
 
@@ -746,16 +760,16 @@
               </button>
 
               <ul class="select-list">
-                <li class="select-item">
+                <!-- <li class="select-item">
                   <button data-select-item>All</button>
+                </li> -->
+
+                <li class="select-item">
+                  <button data-select-item>PWA</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>pwa</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>web application</button>
+                  <button data-select-item>Web application</button>
                 </li>
 
                 <li class="select-item">
@@ -766,217 +780,123 @@
 
             <ul class="project-list">
               <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-1.jpg"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Finance</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-2.png"
-                      alt="orizon"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Orizon</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="pwa"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-3.jpg"
-                      alt="fundo"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Fundo</h3>
-
-                  <p class="project-category">pwa</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
+                class="project-item "
                 data-filter-item
                 data-category="web application"
               >
-                <a href="#">
+                <a
+                  href="./assets/video/wether.mp4"
+                  data-fancybox="gallery"
+                  data-caption="Weather App"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
-
                     <img
                       src="./assets/images/weather-app.png"
-                      alt="brawlhalla"
+                      alt="Weather App"
                       loading="lazy"
                     />
                   </figure>
-
                   <h3 class="project-title">Weather App</h3>
-
                   <p class="project-category">web application</p>
                 </a>
               </li>
 
               <li
-                class="project-item active"
-                data-filter-item
-                data-category="pwa"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-5.png"
-                      alt="dsm."
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">DSM.</h3>
-
-                  <p class="project-category">pwa</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="pwa"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-6.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">MetaSpark</h3>
-
-                  <p class="project-category">pwa</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-7.png"
-                      alt="summary"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Summary</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
+                class="project-item "
                 data-filter-item
                 data-category="web application"
               >
-                <a href="#">
+                <a
+                  href="./assets/video/password.mp4"
+                  data-fancybox="gallery"
+                  data-caption="Password Manager App"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
-
                     <img
                       src="./assets/images/password-manager.png"
                       alt="Password Manager App"
                       loading="lazy"
                     />
                   </figure>
-
                   <h3 class="project-title">Password Manager App</h3>
-
                   <p class="project-category">web application</p>
                 </a>
               </li>
-
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="web development"
+                data-category="pwa"
               >
-                <a href="#">
+                <a
+                  href="./assets/video/helixfxai.mp4"
+                  data-fancybox="gallery"
+                  data-caption="Trading App"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
-
                     <img
-                      src="./assets/images/project-9.png"
-                      alt="arrival"
+                      src="./assets/images/helifx.png"
+                      alt="helixfxai"
                       loading="lazy"
                     />
                   </figure>
-
-                  <h3 class="project-title">Arrival</h3>
-
+                  <h3 class="project-title">Trading PWA</h3>
+                  <p class="project-category">PWA</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="pwa"
+              >
+                <a
+                  href="./assets/video/metaai.mp4"
+                  data-fancybox="gallery"
+                  data-caption="Trading App"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/metaai.png"
+                      alt="helixfxai"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Trading PWA</h3>
+                  <p class="project-category">PWA</p>
+                </a>
+              </li>
+              <li
+                class="project-item "
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="./assets/video/funding.mp4"
+                  data-fancybox="gallery"
+                  data-caption="Trading App"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/funding.png"
+                      alt="funding sathi"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Finance Bank Website</h3>
                   <p class="project-category">Web development</p>
                 </a>
               </li>
@@ -1203,7 +1123,7 @@
           <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="#" class="form" data-form>
+            <form action="#" id="contact-form"  class="form">
               <div class="input-wrapper">
                 <input
                   type="text"
@@ -1258,5 +1178,45 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <!-- jQuery (required for Fancybox) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Optional: Custom Fancybox options
+        $('[data-fancybox="gallery"]').fancybox({
+          // Options can be added here
+          loop: true, // Enable loop
+          buttons: ["slideShow", "fullScreen", "thumbs", "close"],
+        });
+      });
+    </script>
+
+<script>
+  // Initialize EmailJS
+  emailjs.init('Juned shaikh'); // Replace with your EmailJS user ID
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Get form data
+      const form = event.target;
+      const formData = new FormData(form);
+
+      // Send email
+      emailjs.sendForm('service_z28k1m8', 'template_ku3u7jw', formData)
+          .then(function(response) {
+              console.log('Email sent successfully:', response);
+              alert('Your message has been sent!');
+          }, function(error) {
+              console.error('Failed to send email:', error);
+              alert('Failed to send your message. Please try again later.');
+          });
+  });
+</script>
   </body>
 </html>

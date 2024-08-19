@@ -1626,7 +1626,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
-
+  .filter-item button , .project-category{
+    text-transform: capitalize;
+  }
 
   /**
    * CONTACT
